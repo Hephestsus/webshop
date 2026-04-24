@@ -3,7 +3,7 @@ import About from "./pages/About";
 import Admin from "./pages/Admin";
 import "./App.css";
 import Home from "./pages/Home";
-import Cart from "./pages/cart";
+import Cart from "./pages/Сart";
 import Register from "./pages/Register";
 import Login from "./pages/Login";
 import Nav from "./pages/Nav";

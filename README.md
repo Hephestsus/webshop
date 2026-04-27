@@ -1,17 +1,108 @@
-# React + Vite
+# 🛍 React Store App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 Описание
 
-Currently, two official plugins are available:
+Это простой интернет-магазин, созданный на React.
+Приложение позволяет просматривать товары, добавлять их в корзину, регистрироваться и использовать админ-панель для управления товарами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Данные сохраняются в `localStorage`, поэтому сохраняются даже после перезагрузки страницы.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Функционал
 
-## Expanding the ESLint configuration
+### 🏠 Главная страница
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# webshop
+* Загрузка товаров с API
+* Отображение карточек товаров
+* Добавление товара в корзину
+
+### 🛒 Корзина
+
+* Просмотр добавленных товаров
+* Подсчет общей суммы
+* Удаление отдельных товаров
+* Очистка всей корзины
+
+### 🔐 Регистрация и вход
+
+* Регистрация пользователя (сохранение имени)
+* Вход по имени из `localStorage`
+
+### ⚙️ Admin панель
+
+* Авторизация (логин: `admin`, пароль: `1234`)
+* Просмотр товаров
+* Добавление новых товаров
+* Удаление товаров
+* Сохранение данных в `localStorage`
+
+---
+
+## 🧩 Используемые технологии
+
+* React (useState, useEffect)
+* React Router (`react-router-dom`)
+* JavaScript (ES6)
+* localStorage
+* Fetch API
+
+---
+
+## 📦 Установка и запуск
+
+```bash
+npm install
+npm run dev
+```
+
+После запуска приложение будет доступно по адресу:
+
+```
+http://localhost:3000
+```
+
+---
+
+## 🌐 API
+
+Проект использует внешний API:
+
+* https://fakestoreapi.com/products
+
+---
+
+## 📁 Структура проекта
+
+```
+src/
+ ├── Admin.js      # Админ панель
+ ├── Cart.js       # Корзина
+ ├── Home.js       # Главная страница
+ ├── Login.js      # Вход
+ ├── Register.js   # Регистрация
+ ├── Nav.js        # Навигация
+```
+
+---
+
+## ⚠️ Ограничения
+
+* Нет настоящей базы данных (используется localStorage)
+* Простая авторизация без защиты
+* Нет backend части
+
+---
+
+## 💡 Возможные улучшения
+
+* Подключение backend (Node.js, Firebase)
+* Настоящая авторизация (JWT)
+* Стилизация (CSS / Tailwind)
+* Фильтрация и поиск товаров
+
+---
+
+## 👤 Автор
+
+Айдар Мамытбеков
